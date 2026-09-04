@@ -35,9 +35,6 @@ html {
 body {
   min-height: 100vh;
   min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 40px 16px;
   padding-top: max(40px, env(safe-area-inset-top));
   padding-bottom: max(40px, env(safe-area-inset-bottom));
@@ -55,6 +52,7 @@ body {
 .page {
   width: 100%;
   max-width: 420px;
+  margin: 0 auto;
   background: linear-gradient(165deg, var(--emas-terang) 0%, var(--emas-lembut) 100%);
   border: 2px dashed var(--merah-muda);
   border-radius: var(--radius-besar);
@@ -333,7 +331,6 @@ h1 {
 
 @media (max-height: 560px) and (orientation: landscape) {
   body {
-    align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
   }
